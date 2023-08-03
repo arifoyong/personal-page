@@ -1,7 +1,7 @@
 "use client"
 import { useState, useEffect, useRef } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+// import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
 type ChatBubble = {
     text: string,
@@ -118,9 +118,10 @@ export default function Home() {
                         onChange={handleChange}
                         onKeyDown={handleKeyDown}
                         placeholder="input your question here"/>
-                    <button className="bg-gray-800 text-white py-2 px-6 rounded-lg shadow-lg"
+                    <button className="bg-gray-800 text-white py-2 px-4 rounded-lg shadow-lg"
                             onClick={handleClick}>
-                        <FontAwesomeIcon icon={faPaperPlane} />
+                                send
+                        {/* <FontAwesomeIcon icon={faPaperPlane} /> */}
                     </button>
                 </div>
             </div>
