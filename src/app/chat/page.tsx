@@ -1,7 +1,6 @@
 "use client"
 import { useState, useEffect, useRef } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import Link from 'next/link'
 
 type ChatBubble = {
     text: string,
@@ -95,34 +94,43 @@ export default function Home() {
     )
 
     return (
-        <div className="flex max-w-screen-xl h-screen mx-auto flex-col justify-between bg-blue-100">
-            {/* Chat history */}
-            <div className="flex flex-col gap-4 py-4 px-6 mt-6 overflow-y-auto">
-                {messages.map((msg, i) => {
-                    return (
-                        <div key={i}>
-                            { renderBubble(msg) }
-                        </div>
-                    )
-                })}
-                <div className="" ref={bottomEl}></div>
-            </div>
-            
-            {/* Input box */}
-            <div className="flex flex-col p-4">
-                { isLoading && <LoadingSign /> }
-                <div className="flex gap-2">
-                    <input className="w-full px-4 py-2 rounded-lg" 
-                        type="text"
-                        value={question?.text}
-                        onChange={handleChange}
-                        onKeyDown={handleKeyDown}
-                        placeholder="input your question here"/>
-                    <button className="bg-gray-800 text-white py-2 px-4 rounded-lg shadow-lg"
-                            onClick={handleClick}>
-                                send
-                        {/* <FontAwesomeIcon icon={faPaperPlane} /> */}
+        <div className="flex max-w-screen-lg h-screen mx-auto flex-col bg-blue-100"> 
+            <div className="flex w-full justify-end">
+                <Link href="/">
+                    <button className="text-gray-800 py-2 px-4 font-medium text-sm underline hover:text-blue-800">
+                        back to main
                     </button>
+                </Link>
+            </div>
+
+            <div className="flex flex-col flex-1 justify-between ">
+                {/* Chat history */}
+                <div className="flex flex-col gap-4 py-4 px-6 overflow-y-auto">
+                    {messages.map((msg, i) => {
+                        return (
+                            <div key={i}>
+                                { renderBubble(msg) }
+                            </div>
+                        )
+                    })}
+                    <div className="" ref={bottomEl}></div>
+                </div>
+                
+                {/* Input box */}
+                <div className="flex flex-col p-4">
+                    { isLoading && <LoadingSign /> }
+                    <div className="flex gap-2">
+                        <input className="w-full px-4 py-2 rounded-lg" 
+                            type="text"
+                            value={question?.text}
+                            onChange={handleChange}
+                            onKeyDown={handleKeyDown}
+                            placeholder="input your question here"/>
+                        <button className="bg-gray-800 text-white py-2 px-4 rounded-lg shadow-lg hover:bg-gray-700"
+                                onClick={handleClick}>
+                                send
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
