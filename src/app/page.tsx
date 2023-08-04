@@ -23,7 +23,7 @@ export default function Home() {
           
         </div>
         <div className="hidden md:block">
-          <Image src="/image/profile_pic.jpeg"
+          <Image src="https://4rifoppo-chatbot.s3.ap-southeast-1.amazonaws.com/profile_pic.JPEG"
                   width={200}
                   height={200}
                   alt="Arif Oyong"/>

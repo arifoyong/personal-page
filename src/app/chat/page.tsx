@@ -103,7 +103,7 @@ export default function Home() {
                 </Link>
             </div>
 
-            <div className="flex flex-col flex-1 justify-between ">
+            <div className="flex flex-col flex-1 justify-between bg-blue-100">
                 {/* Chat history */}
                 <div className="flex flex-col gap-4 py-4 px-6 overflow-y-auto">
                     {messages.map((msg, i) => {
