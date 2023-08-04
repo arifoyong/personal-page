@@ -8,7 +8,7 @@ export default function Home() {
       <div className="flex md:flex-row flex-col items-center justify-center gap-2 md:gap-8 bg-white">
         <div className="flex flex-col text-2xl md:text-3xl lg:text-5xl justify-center">
           <div className="flex font-bold justify-center md:justify-start">
-            Hi. I'm Arif Oyong
+            Hi. I am Arif Oyong
           </div>
           <div className="flex justify-center md:justify-start">
             Engineer
@@ -36,10 +36,10 @@ export default function Home() {
           About Me
         </div>
         <div className="ml-2">
-          I'm passionate about solving problems with modern technology.
+          I am passionate about solving problems with modern technology.
         </div>
         <div className="ml-2">
-          I have diverse work experience in manufacturing industry. Throughout my career I've enjoyed several roles in machine development, Smart Factory Planning & Execution, and Manager of Rationalization & Factory Automation.
+          I have diverse work experience in manufacturing industry. Throughout my career I&apos;ve enjoyed several roles in machine development, Smart Factory Planning & Execution, and Manager of Rationalization & Factory Automation.
         </div>
         <div className="ml-2">
           In my personal time, I enjoy exploring interesting technologies. Recently I tinkered with various machine learning & AI technologies, focusing on their practical examples such as OCR and chat bot. 
