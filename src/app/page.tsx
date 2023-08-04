@@ -62,11 +62,8 @@ export default function Home() {
           </div>
           <div className="list-disc pt-1 ml-1">
             <div className="underline">Highlights:</div>
-            <li>Introduction of the first robot in Murata Singapore 
-                  to reduce related manual work by 80%</li>
-            <li>Development & introduction of CNN-based AI to assist
-                  operator in defect detection, resulting in 30% increase in
-                  productivity & 0 outflow</li>
+            <li>Introduction of the first robot in Murata Singapore to reduce related manual work by 80%</li>
+            <li>Development & introduction of CNN-based AI to assist operator in defect detection, resulting in 30% increase in productivity & 0 outflow</li>
             <li>Development of framework & standards for machine data collection</li>
           </div>
         </div>
@@ -76,16 +73,13 @@ export default function Home() {
           <div className="list-disc pt-2 ml-1">
             <div className="underline">Key responsibilities:</div>
             <li>Plan & execute Smart Factory initiatives</li>
-            <li>Drove adoption of new technologies including IT tools
-                across the manufacturing division</li>
+            <li>Drove adoption of new technologies including IT tools across the manufacturing division</li>
           </div>
           <div className="list-disc pt-2 ml-1">
             <div className="underline">Highlights:</div>
-            <li>Deployment of Autonomous Mobile Robot for lot delivery
-                across processes, complete with lift integration</li>
+            <li>Deployment of Autonomous Mobile Robot for lot delivery across processes, complete with lift integration</li>
             <li>Development of interface for machine data collection</li>
-            <li>Implementation of BI tools for visualization of key factory
-                KPIs</li>
+            <li>Implementation of BI tools for visualization of key factory KPIs</li>
           </div>
         </div>
         <div className="pt-2 ml-2">
