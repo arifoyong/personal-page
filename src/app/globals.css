@@ -2,36 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
-
-.blue-circle{
-  animation-delay: 0.1s;
-}
-.green-circle{
+.circle-1{
   animation-delay: 0.2s;
 }
-.red-circle{
-  animation-delay: 0.3s;
+.circle-2{
+  animation-delay: 0.4s;
+}
+.circle-3{
+  animation-delay: 0.6s;
 }
