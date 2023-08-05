@@ -110,7 +110,7 @@ export default function Home() {
                 This bot was created to emulate interview session with me.
             </div>
             <div className="">
-                DO NOTE that I have taken pre-caution to prevent the bot from hallucinating. However, I'm not 100% certain about that. Please check the <Link className="text-blue-500 underline" href="/">resume page</Link> for the right information about me. 
+                DO NOTE that I have taken pre-caution to prevent the bot from hallucinating. However, I&apos;m not 100% certain about that. Please check the <Link className="text-blue-500 underline" href="/">resume page</Link> for the right information about me. 
             </div>
             <div className="">
                 This bot was created with the open-source model: google/flan-T5-xxl. It is an open-source transformer-based architecture that uses a text-to-text approach for NLP released by Google. 
