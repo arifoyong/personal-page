@@ -28,13 +28,13 @@ export default function Home() {
               <p>📞  86528243</p>
             </div>
             <div className="flex flex-col text-sm py-2 gap-1">
-              <p className="text-blue-800 underline"><Link href="https://www.linkedin.com/in/arif-wicaksono-oyong-62087721">My LinkedIn</Link></p>
-              <p className="text-blue-800 underline"><Link href="https://github.com/arifoyong">My Github</Link></p>
+              <p className="text-blue-800 underline py-1"><Link href="https://www.linkedin.com/in/arif-wicaksono-oyong-62087721">My LinkedIn</Link></p>
+              <p className="text-blue-800 underline py-1"><Link href="https://github.com/arifoyong">My Github</Link></p>
             </div>
             
             <div className="flex justify-start">
               <Link href="/chat">
-                <button className="px-4 py-1 bg-blue-700 text-sm text-white rounded-xl hover:bg-blue-800 shadow-lg">
+                <button className="px-4 py-2 bg-blue-700 text-sm text-white rounded-xl hover:bg-blue-800 shadow-lg">
                   Interview me
                 </button>
               </Link>
@@ -66,21 +66,21 @@ export default function Home() {
               Skills
             </div>
             <div className="flex flex-col md:flex-row text-slate-700 md:gap-8 ml-2">
-              <div className="list-disc">
+              <ul className="list-disc">
                 <li>Project management</li>
                 <li>Communication</li>
                 <li>Planning & roadmapping</li>
                 <li>Industrial machine design</li>
                 <li>Machine safety</li>
-              </div>
-              <div className="list-disc">
+              </ul>
+              <ul className="list-disc">
                 <li>VB.NET</li>
                 <li>Python</li>
                 <li>NodeJS</li>
                 <li>Tensorflow</li>
                 <li>SQL</li>
                 <li>PowerBI</li>
-              </div>
+              </ul>
             </div>
           </div>
         </div>
@@ -96,46 +96,58 @@ export default function Home() {
           <div className="pt-2 ml-2">
             <p className="text-lg font-semibold">Manager - Rationalization & FA</p>
             <p className="font-medium">Murata Electronics Singapore <span className="bg-teal-100 text-slate-600 rounded-xl px-2 ml-2">2020 - current</span></p>
-            <div className="list-disc pt-1 ml-1">
+            <div className="pt-1 ml-1">
               <div className="underline">Key responsibilities:</div>
               <div>Leading a team of engineers for:</div>
-              <li>Factory capacity planning to meet demand forecast</li>
-              <li>To implement rationalization activities, including factory automation & leveraging IT technology to bring down cost</li>
+              <ul className="list-disc list-inside">
+                <li>Factory capacity planning to meet demand forecast</li>
+                <li>To implement rationalization activities, including factory automation & leveraging IT technology to bring down cost</li>
+              </ul>
             </div>
-            <div className="list-disc pt-1 ml-1">
+            <div className="pt-1 ml-1">
               <div className="underline">Highlights:</div>
-              <li>Introduction of the first robot in Murata Singapore to reduce related manual work by 80%</li>
-              <li>Development & introduction of CNN-based AI to assist operator in defect detection, resulting in 30% increase in productivity & 0 outflow</li>
-              <li>Development of framework & standards for machine data collection</li>
+              <ul className="list-disc list-inside">
+                <li>Introduction of the first robot in Murata Singapore to reduce related manual work by 80%</li>
+                <li>Development & introduction of CNN-based AI to assist operator in defect detection, resulting in 30% increase in productivity & 0 outflow</li>
+                <li>Development of framework & standards for machine data collection</li>
+              </ul>
             </div>
           </div>
           <div className="pt-2 ml-2">
             <p className="text-lg font-semibold">Assistant Manager - Smart Factory</p>
             <p className="font-medium">Murata Electronics Singapore <span className="bg-teal-100 text-slate-600 rounded-xl px-2 ml-2">2017 - 2020</span></p>
-            <div className="list-disc pt-2 ml-1">
+            <div className="pt-2 ml-1">
               <div className="underline">Key responsibilities:</div>
-              <li>Plan & execute Smart Factory initiatives</li>
-              <li>Drove adoption of new technologies including IT tools across the manufacturing division</li>
+              <ul className="list-disc list-inside">
+                <li>Plan & execute Smart Factory initiatives</li>
+                <li>Drove adoption of new technologies including IT tools across the manufacturing division</li>
+              </ul>
             </div>
-            <div className="list-disc pt-2 ml-1">
+            <div className="pt-2 ml-1">
               <div className="underline">Highlights:</div>
-              <li>Deployment of Autonomous Mobile Robot for lot delivery across processes, complete with lift integration</li>
-              <li>Development of interface for machine data collection</li>
-              <li>Implementation of BI tools for visualization of key factory KPIs</li>
+              <ul className="list-disc list-inside">
+                <li>Deployment of Autonomous Mobile Robot for lot delivery across processes, complete with lift integration</li>
+                <li>Development of interface for machine data collection</li>
+                <li>Implementation of BI tools for visualization of key factory KPIs</li>
+              </ul>
             </div>
           </div>
           <div className="pt-2 ml-2">
             <p className="text-lg font-semibold">Executive - Machine Development</p>
             <p className="font-medium">Murata Electronics Singapore <span className="bg-teal-100 text-slate-600 rounded-xl px-2 ml-2">2010 - 2017</span></p>
-            <div className="list-disc pt-2 ml-1">
+            <div className="pt-2 ml-1">
               <div className="underline">Key responsibilities:</div>
-              <li>Design & development of machines for MLCC production</li>
-              <li>Review of mechanical & electrical design</li>
+              <ul className="list-disc list-inside">
+                <li>Design & development of machines for MLCC production</li>
+                <li>Review of mechanical & electrical design</li>
+              </ul>
             </div>
-            <div className="list-disc pt-2 ml-1">
+            <div className="pt-2 ml-1">
               <div className="underline">Highlights:</div>
-              <li>Developed 10 different machines for MLCC manufacturing</li>
-              <li>Expansion of developed machines to overseas affiliates</li>
+              <ul className="list-disc list-inside">
+                <li>Developed 10 different machines for MLCC manufacturing</li>
+                <li>Expansion of developed machines to overseas affiliates</li>
+              </ul>
             </div>
           </div>
         </div>
