@@ -16,6 +16,7 @@ export default function Home() {
                   className="object-cover"
                   width={180}
                   height={180}
+                  priority
                   alt="Arif Oyong"/>
             </div>
           <div className="flex flex-col">
