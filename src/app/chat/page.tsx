@@ -8,8 +8,9 @@ type ChatBubble = {
   }
 
 type ReplyFromAPI = {
-    response: string;
-    error: string
+        response: string;
+        error: string
+
 }
 
 const initialQuestion: ChatBubble = {
@@ -69,8 +70,12 @@ export default function Home() {
                     },
             body: JSON.stringify({question: question.text})
         })
-        .then(res => res.json())
-        .then((data: ReplyFromAPI) => {
+        .then(res => {
+            console.log("res", res)
+            return res.json()
+        })
+        .then((body: string) => {
+            const data: ReplyFromAPI = JSON.parse(body)
             const reply =  { text:data.response, AI: true }
             setMessages(prevChats => [...prevChats, reply])
             setIsLoading(false)
