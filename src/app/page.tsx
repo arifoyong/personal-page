@@ -66,23 +66,25 @@ export default function Home() {
             <div className="text-2xl font-bold text-slate-700">
               Skills
             </div>
-            <div className="flex flex-col md:flex-row text-slate-700 md:gap-8 ml-2">
-              <ul className="list-disc">
+              <ul className="list-disc text-slate-700 md:gap-8 ml-2">
                 <li>Project management</li>
-                <li>Communication</li>
-                <li>Planning & roadmapping</li>
-                <li>Industrial machine design</li>
-                <li>Machine safety</li>
+                <li>Industrial Machine design</li>
+                <li>Machine interface with VB.NET</li>
+                <li>Fullstack development: Python, NodeJS, React, MYSQL</li>
+                <li>BI & Analysis: SQL, PowerBI</li>
+                <li>Machine learning: tensorflow, scikit</li>
               </ul>
-              <ul className="list-disc">
-                <li>VB.NET</li>
-                <li>Python</li>
-                <li>NodeJS</li>
-                <li>Tensorflow</li>
-                <li>SQL</li>
-                <li>PowerBI</li>
-              </ul>
+          </div>
+
+          {/* Language */}
+          <div className="flex flex-col py-4 gap-2 text-sm">
+            <div className="text-2xl font-bold text-slate-700">
+              Language
             </div>
+              <ul className="list-disc text-slate-700 md:gap-8 ml-2">
+                <li>English: fluent</li>
+                <li>Indonesian: native</li>
+              </ul>
           </div>
         </div>
       </section>
@@ -134,7 +136,7 @@ export default function Home() {
             </div>
           </div>
           <div className="pt-2 ml-2">
-            <p className="text-lg font-semibold">Executive - Machine Development</p>
+            <p className="text-lg font-semibold">Senior Engineer - Machine Development</p>
             <p className="font-medium">Murata Electronics Singapore <span className="bg-teal-100 text-slate-600 rounded-xl px-2 ml-2">2010 - 2017</span></p>
             <div className="pt-2 ml-1">
               <div className="underline">Key responsibilities:</div>
