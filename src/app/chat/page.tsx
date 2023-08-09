@@ -58,11 +58,11 @@ export default function Home() {
     }   
 
     const sendQuestion = () => {
-        setIsLoading(true)
-        if (question) {
-            setMessages(prevChats => [...prevChats, question])
+        if (question.text === '') {
+            return
         }
-
+        setIsLoading(true)
+        setMessages(prevChats => [...prevChats, question])
         fetch(`${API_URL}`, {
             method: 'POST',
             headers: {  'Accept': 'application/json',
@@ -70,10 +70,7 @@ export default function Home() {
                     },
             body: JSON.stringify({question: question.text})
         })
-        .then(res => {
-            console.log("res", res)
-            return res.json()
-        })
+        .then(res => res.json() )
         .then((body: string) => {
             const data: ReplyFromAPI = JSON.parse(body)
             const reply =  { text:data.response, AI: true }
