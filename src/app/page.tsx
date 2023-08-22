@@ -51,14 +51,14 @@ export default function Home() {
               About Me
             </div>
             <div className="ml-2 text-slate-700">
-              I am passionate about solving problems with modern technology.
+              Innovative technical leader with 13 years of experience in manufacturing industry. Proven ability to drive innovation through digital transformation and automation. Strong communicator with broad understanding of digital technologies & industrial automation, providing technical leadership to engineering team with diverse roles & skillset.
             </div>
-            <div className="ml-2 text-slate-700">
+             {/* <div className="ml-2 text-slate-700">
               I have diverse work experience in manufacturing industry. Throughout my career I&apos;ve enjoyed several roles in machine development, Smart Factory Planning & Execution, and Manager of Rationalization & Factory Automation.
-            </div>
-            <div className="ml-2 text-slate-700">
+            </div> */}
+            {/* <div className="ml-2 text-slate-700">
               In my personal time, I enjoy exploring interesting technologies. Recently I tinkered with various machine learning & AI technologies, focusing on their practical examples such as OCR and chat bot. 
-            </div>
+            </div>  */}
           </div>
 
           {/* Skills */}
@@ -68,11 +68,12 @@ export default function Home() {
             </div>
               <ul className="list-disc text-slate-700 md:gap-8 ml-2">
                 <li>Project management</li>
-                <li>Industrial Machine design</li>
+                <li>Solution development</li>
                 <li>Machine interface with VB.NET</li>
                 <li>Fullstack development: Python, NodeJS, React, MYSQL</li>
                 <li>BI & Analysis: SQL, PowerBI</li>
                 <li>Machine learning: tensorflow, scikit</li>
+                <li>Industrial Automation</li>
               </ul>
           </div>
 
@@ -103,16 +104,16 @@ export default function Home() {
               <div className="underline">Key responsibilities:</div>
               <div>Leading a team of engineers for:</div>
               <ul className="list-disc list-inside">
-                <li>Factory capacity planning to meet demand forecast</li>
-                <li>To implement rationalization activities, including factory automation & leveraging IT technology to bring down cost</li>
+                <li>Lead & provide technical leadership to engineering team with diverse role and skillset</li>
+                <li>Plan & implement rationalization activities through introduction of automation, development of application, and/or BI analytics</li>
               </ul>
             </div>
             <div className="pt-1 ml-1">
               <div className="underline">Highlights:</div>
               <ul className="list-disc list-inside">
-                <li>Introduction of the first robot in Murata Singapore to reduce related manual work by 80%</li>
-                <li>Development & introduction of CNN-based AI to assist operator in defect detection, resulting in 30% increase in productivity & 0 outflow</li>
-                <li>Development of framework & standards for machine data collection</li>
+                <li>Lead the development of standards for machine data collection & standards communication for parsing data to server </li>
+                <li>Development & deployment of Convolutional Neural Network (CNN-based) AI to assist operator in defect detection, resulting in 30% increase in productivity and zero outflow</li>
+                <li>Drive defective ratio improvement activity in Inspection Process by leveraging PowerBI analytics. The effort resulted in over S$1 million cost reduction </li>
               </ul>
             </div>
           </div>
@@ -123,15 +124,15 @@ export default function Home() {
               <div className="underline">Key responsibilities:</div>
               <ul className="list-disc list-inside">
                 <li>Plan & execute Smart Factory initiatives</li>
-                <li>Drove adoption of new technologies including IT tools across the manufacturing division</li>
+                <li>Drive adoption of new technologies including IT tools across the manufacturing division</li>
               </ul>
             </div>
             <div className="pt-2 ml-1">
               <div className="underline">Highlights:</div>
               <ul className="list-disc list-inside">
-                <li>Deployment of Autonomous Mobile Robot for lot delivery across processes, complete with lift integration</li>
-                <li>Development of interface for machine data collection</li>
-                <li>Implementation of BI tools for visualization of key factory KPIs</li>
+                <li>Drove introduction and adoption of BI tools for visualization of key factory KPIs</li>
+                <li>Initiated deployment of Autonomous Mobile Robot for lot delivery across processes</li>
+                <li>Developed methodology & application for machine data collection</li>
               </ul>
             </div>
           </div>
@@ -141,15 +142,15 @@ export default function Home() {
             <div className="pt-2 ml-1">
               <div className="underline">Key responsibilities:</div>
               <ul className="list-disc list-inside">
-                <li>Design & development of machines for MLCC production</li>
+                <li>Design & development of automated machines for MLCC production</li>
                 <li>Review of mechanical & electrical design</li>
               </ul>
             </div>
             <div className="pt-2 ml-1">
               <div className="underline">Highlights:</div>
               <ul className="list-disc list-inside">
-                <li>Developed 10 different machines for MLCC manufacturing</li>
-                <li>Expansion of developed machines to overseas affiliates</li>
+                <li>Developed 10 different machine types for MLCC manufacturing</li>
+                <li>One of the machine types was expanded to overseas affiliates</li>
               </ul>
             </div>
           </div>
