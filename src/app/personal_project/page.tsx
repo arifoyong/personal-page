@@ -42,7 +42,7 @@ const PersonalPage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <Card title="Digital Namecard Service"
                         imgSrc='https://4rifoppo-chatbot.s3.ap-southeast-1.amazonaws.com/Digital_namecard_Screenshot02.png'
-                        content="A web-based SaaS for digital namecard service. The service allow user authenticated user to create digital namecards. The digital namecard can be shared through QR codes & allow the recipient to easily add the contact info into their phonebook"
+                        content="A web-based SaaS for digital namecard service. The service allow authenticated user to create digital namecards. The digital namecard can be shared through QR codes & allow the recipient to easily add the contact info into their phonebook"
                         stacks="NextJS, NextAuth, Prisma, MYSQL"
                         githubLink='https://github.com/arifoyong/digital-namecard'
                 />
