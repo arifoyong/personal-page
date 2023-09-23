@@ -56,12 +56,6 @@ export default function Home() {
               <div className="ml-2 text-slate-700">
                 Innovative technical leader with 13 years of experience in manufacturing industry. Proven ability to drive innovation through digital transformation and automation. Strong communicator with broad understanding of digital technologies & industrial automation, providing technical leadership to engineering team with diverse roles & skillset.
               </div>
-              {/* <div className="ml-2 text-slate-700">
-                I have diverse work experience in manufacturing industry. Throughout my career I&apos;ve enjoyed several roles in machine development, Smart Factory Planning & Execution, and Manager of Rationalization & Factory Automation.
-              </div> */}
-              {/* <div className="ml-2 text-slate-700">
-                In my personal time, I enjoy exploring interesting technologies. Recently I tinkered with various machine learning & AI technologies, focusing on their practical examples such as OCR and chat bot. 
-              </div>  */}
             </div>
 
             {/* Skills */}
@@ -74,7 +68,7 @@ export default function Home() {
                   <li>Solution development</li>
                   <li>Machine interface with VB.NET</li>
                   <li>Fullstack development: Python, NodeJS, React, MYSQL</li>
-                  <li>BI & Analysis: SQL, PowerBI</li>
+                  <li>BI & Data Analysis: SQL, PowerBI</li>
                   <li>Machine learning: tensorflow, scikit</li>
                   <li>Industrial Automation</li>
                 </ul>
@@ -102,60 +96,58 @@ export default function Home() {
             </div>
             <div className="pt-2 ml-2">
               <p className="text-lg font-semibold">Manager - Rationalization & FA</p>
-              <p className="font-medium">Murata Electronics Singapore <span className="bg-teal-100 text-slate-600 rounded-xl px-2 ml-2">2020 - current</span></p>
-              <div className="pt-1 ml-1">
+              <p className="font-medium">Murata Electronics Singapore <span className="bg-teal-100 text-slate-600 rounded-xl px-2 ml-2">2020 - 2023</span></p>
+              {/* <div className="pt-1 ml-1">
                 <div className="underline">Key responsibilities:</div>
                 <div>Leading a team of engineers for:</div>
                 <ul className="list-disc list-inside">
                   <li>Lead & provide technical leadership to engineering team with diverse role and skillset</li>
                   <li>Plan & implement rationalization activities through introduction of automation, development of application, and/or BI analytics</li>
                 </ul>
-              </div>
-              <div className="pt-1 ml-1">
-                <div className="underline">Highlights:</div>
-                <ul className="list-disc list-inside">
-                  <li>Lead the development of standards for machine data collection & standards communication for parsing data to server </li>
-                  <li>Development & deployment of Convolutional Neural Network (CNN-based) AI to assist operator in defect detection, resulting in 30% increase in productivity and zero outflow</li>
-                  <li>Drive defective ratio improvement activity in Inspection Process by leveraging PowerBI analytics. The effort resulted in over S$1 million cost reduction </li>
-                </ul>
-              </div>
+              </div> */}
+          
+              {/* <div className="underline">Highlights:</div> */}
+              <ul className="list-disc list-outside pt-2 ml-1">
+                <li>Lead development of standard framework for machine data collection, from machine to database server. The implementation of those standards cut development time up to 80%</li>
+                <li>Design, develop, test, and deploy CNN-based AI model to assist operator in defect detection, resulting in 30% increase in productivity and zero defective outflow. The system was deployed as full stack solution combining Python, Tensorflow, React, & MYSQL</li>
+                <li>Drive defective ratio improvement activity in Inspection Process by leveraging data analysis & monitoring with PowerBI combined with understanding on process. The effort resulted in over S$1 million cost reduction</li>
+              </ul>
+   
             </div>
             <div className="pt-2 ml-2">
               <p className="text-lg font-semibold">Assistant Manager - Smart Factory</p>
               <p className="font-medium">Murata Electronics Singapore <span className="bg-teal-100 text-slate-600 rounded-xl px-2 ml-2">2017 - 2020</span></p>
-              <div className="pt-2 ml-1">
+              {/* <div className="pt-2 ml-1">
                 <div className="underline">Key responsibilities:</div>
                 <ul className="list-disc list-inside">
                   <li>Plan & execute Smart Factory initiatives</li>
                   <li>Drive adoption of new technologies including IT tools across the manufacturing division</li>
                 </ul>
-              </div>
-              <div className="pt-2 ml-1">
-                <div className="underline">Highlights:</div>
-                <ul className="list-disc list-inside">
-                  <li>Drove introduction and adoption of BI tools for visualization of key factory KPIs</li>
-                  <li>Initiated deployment of Autonomous Mobile Robot for lot delivery across processes</li>
-                  <li>Developed methodology & application for machine data collection</li>
-                </ul>
-              </div>
+              </div> */}
+           
+              {/* <div className="underline">Highlights:</div> */}
+              <ul className="list-disc list-outside pt-2 ml-1">
+                <li>Drove introduction and adoption of BI tools for visualization of factory reports, eliminating ≈350 hours/month required for manual creation & update of those reporting. The creation of such a report involved in-depth requirements gathering, extensive SQL processing, and visualization development.</li>
+                <li>Deployment of vertical carousel & integration of Manufacturing Execution System, leading to 70% work reduction and 65% space saving</li>
+                <li>Initiated deployment of Autonomous Mobile Robot for lot delivery across processes, eliminating ≈400 hours/month of manual lot transportation. The deployment includes integration with lift, automated doors, andon light, and camera for lift occupancy check.</li>
+              </ul>
+
             </div>
             <div className="pt-2 ml-2">
               <p className="text-lg font-semibold">Senior Engineer - Machine Development</p>
               <p className="font-medium">Murata Electronics Singapore <span className="bg-teal-100 text-slate-600 rounded-xl px-2 ml-2">2010 - 2017</span></p>
-              <div className="pt-2 ml-1">
+              {/* <div className="pt-2 ml-1">
                 <div className="underline">Key responsibilities:</div>
                 <ul className="list-disc list-inside">
                   <li>Design & development of automated machines for MLCC production</li>
                   <li>Review of mechanical & electrical design</li>
                 </ul>
-              </div>
-              <div className="pt-2 ml-1">
-                <div className="underline">Highlights:</div>
-                <ul className="list-disc list-inside">
-                  <li>Developed 10 different machine types for MLCC manufacturing</li>
-                  <li>One of the machine types was expanded to overseas affiliates</li>
-                </ul>
-              </div>
+              </div> */}
+              {/* <div className="underline">Highlights:</div> */}
+              <ul className="list-disc list-outside pt-2 ml-1">
+                <li>Worked together with internal stakeholders to design requirements for process & machines to achieve organization target.</li>
+                <li>Designed & developed over 10 types of semi-automated & automated machines for MLCC manufacturing. One of the machines was successfully expanded to other oversea affiliates.</li>
+              </ul>
             </div>
           </div>
 
