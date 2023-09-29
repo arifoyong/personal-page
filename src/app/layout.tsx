@@ -21,8 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${poppins.className} container mx-auto`}>
         {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
-              <GoogleAnalytics ga_id= 
-              {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
+              <GoogleAnalytics ga_id= {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
             ) : null}
         {children}
       </body>
