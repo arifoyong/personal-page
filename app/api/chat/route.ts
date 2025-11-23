@@ -38,6 +38,7 @@ export async function POST(req: Request) {
     const agent = new Agent({
       name: 'Me',
       instructions: SYS_MSG,
+      model: 'gpt-4.1-mini',
       tools: [record_unanswered_question, record_user_information]
     });
 
