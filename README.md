@@ -1,26 +1,27 @@
 ## Overview
 
-A resume page for me, developed with NextJS.
-Key features:
-- Resume page
-- Chat page to simulate interview session
+The future of resume is with AI
+This is a resume page, using Generative AI to act as myself.
 
-During development, focus was given to achieve score 100 on lighthouse test. 
+Features:
+- Ability to answer questions about my background and professional career
+- Use of streaming
+- Pushover notification to myself on: (1) Unanswered questions and (2) Interest to connect 
+
 Link: [https://arifoyong.xyz](https://arifoyong.xyz)
 
 
-## Additional note
-
-The /chat page is a bot to simulate interview session with me. 
-It is based on google/flan-t5-xxl, hosted in huggingface. It was chose over ChatGPT because it is free. 
-The backend is deployed in AWS Lambda.
-Unfortunately the backend code is not part of this repo.
-
 ## Stack
-
-# Frontend:
 - NextJS
+- OpenAI Agents SDK
 
-# Backend:
-- Python
-- HuggingFace library
+
+## Version
+ver 2.0
+- Upgrade to using OpenAI
+- Add tools for notification
+- Convert python backend to NextJS
+
+ver 1.0
+- Initial build
+- Use google/flan-t5-xxl
