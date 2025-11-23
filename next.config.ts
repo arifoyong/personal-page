@@ -19,7 +19,7 @@ const nextConfig: NextConfig = {
           {
             key: 'Content-Security-Policy',
             value:
-              "default-src 'self' 'https://arifoyong.xyz/'; image-src 'self' '4rifoppo-chatbot.s3.ap-southeast-1.amazonaws.com'; script-src 'self' https://www.google-analytics.com; font-src 'self' 'https://fonts.googleapis.com'",
+              "default-src 'self' 'https://arifoyong.xyz'; image-src 'self' '4rifoppo-chatbot.s3.ap-southeast-1.amazonaws.com'; script-src 'self' 'https://www.google-analytics.com' 'https://www.googletagmanager.com'; font-src 'self' 'https://fonts.googleapis.com'",
           },
           {
             key: 'X-Content-Type-Options',
