@@ -36,8 +36,9 @@ At my core, I’m passionate about exploring and applying new technologies to so
 Development of working prototypes to test concept and ideas. I worked with various technologies to develop suitable solution within the constraint of business function.
 
 Key projects:
-- Development of fullstack web application for sales training agent by incorporating Azure OpenAI
-- Customer name matching, by using combination of traditiona NLP and LLM
+- Development of fullstack web application for sales training agent by incorporating Azure OpenAI. The application reduces the need for one-on-one coaching session, as well as enabling training for sales person without fear of making a mistake
+- Customer name matching, by using combination of traditional NLP and LLM. The system allows for customer information search from few hours to less than 5 minutes per customer.
+- Fullstack web application for visualizing key KPIs for SME segment, recommendation on programs to improve KPIs, as well as progress tracker. The application has been used by sales persons across APEC Region.
 - Digitalization of workplace observation process by using Microsoft PowerApps, Power Automate & PowerBI
 
 ### **Murata Electronics Singapore**

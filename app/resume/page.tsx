@@ -98,9 +98,10 @@ export default function Home() {
 
             {/* <div className="underline">Highlights:</div> */}
             <ul className="list-disc list-outside pt-2 ml-1">
-              <li>Implementation of LLM for Sales Training system</li>
-              <li>Digitalization of manual GEMBA process</li>
-              <li>Digitalization of Sales Playbook</li>
+              <li>Development of fullstack web application for sales training agent by incorporating Azure OpenAI. The application reduces the need for one-on-one coaching session, as well as enabling training for sales person without fear of making a mistake</li>
+              <li>Customer name matching, by using combination of traditional NLP and LLM. The system allows for customer information search from few hours to less than 5 minutes per customer.</li>
+              <li>Fullstack web application for visualizing key KPIs for SME segment, recommendation on programs to improve KPIs, as well as progress tracker. The application has been used by sales persons across APEC Region.</li>
+              <li>Digitalization of workplace observation process by using Microsoft PowerApps, Power Automate & PowerBI.</li>
             </ul>
 
           </div>
