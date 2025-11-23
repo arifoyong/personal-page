@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex gap-2 text-muted-foreground">
+    <div className="min-h-screen flex flex-col md:flex-row gap-2 text-muted-foreground">
       {/* Left */}
       <section className="flex flex-col w-full lg:w-1/3 rounded-lg shadow-xl border-1">
         {/* Photo section */}
