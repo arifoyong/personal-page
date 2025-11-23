@@ -7,6 +7,7 @@ export default async function Home() {
 
   return (
     <main className="flex flex-col container w-3/4 mx-auto max-h-screen">
+      <p>test {process.env.OPENAI_API_KEY}</p>
       <Suspense fallback={<p>Loading...</p>}>
         <Chat conversationId={conv.conversationId} />
       </Suspense>
