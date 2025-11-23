@@ -8,7 +8,7 @@ export default async function Home() {
   const conv = await generateConvId()
 
   return (
-    <main className="flex flex-col container w-3/4 mx-auto max-h-screen">
+    <main className="flex flex-col container w-full md:w-3/4 mx-auto max-h-screen">
       <Suspense fallback={<p>Loading...</p>}>
         <Chat conversationId={conv.conversationId} />
       </Suspense>
