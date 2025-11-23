@@ -16,7 +16,7 @@ export const Disclaimer = () => {
         {DISCLAIMER_MSG}
       </div>
       <Popover>
-        <PopoverTrigger className="text-sm italic">⚠️ Disclaimer</PopoverTrigger>
+        <PopoverTrigger className="block md:hidden text-sm italic mt-1">⚠️ Disclaimer</PopoverTrigger>
         <PopoverContent>{DISCLAIMER_MSG}</PopoverContent>
       </Popover>
     </>
