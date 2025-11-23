@@ -92,7 +92,7 @@ export default function Chat({
   }
 
   return (
-    <div className='flex flex-col justify-between py-4 h-[calc(100vh-100px)] gap-2'>
+    <div className='flex flex-col justify-between h-[calc(100vh-100px)] gap-2'>
       {messages.length > 0 ? (
         <div className="flex flex-col gap-4 overflow-y-auto">
           {messages.map((message, i) => (
