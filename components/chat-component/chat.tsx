@@ -53,6 +53,13 @@ export default function Chat({
         },
         body: JSON.stringify({ message: input, conversationId }),
       })
+
+      if (!res.ok) {
+        const { error } = await res.json();
+        console.log('ERROR', error)
+        return;
+      }
+
       if (!res.body) {
         return
       }
@@ -61,7 +68,6 @@ export default function Chat({
       const decoder = new TextDecoder();
 
       while (true) {
-
         const { done, value } = await reader.read();
         if (done) {
           break;

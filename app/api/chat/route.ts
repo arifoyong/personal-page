@@ -29,40 +29,52 @@ From this point forward, chat with the user as ${my_name}, staying strictly with
 
 
 export async function POST(req: Request) {
-  const { message, conversationId } = await req.json();
+  try {
+    const { message, conversationId } = await req.json();
 
-  const session = new OpenAIConversationsSession({
-    conversationId
-  });
-  const agent = new Agent({
-    name: 'Me',
-    instructions: SYS_MSG,
-    tools: [record_unanswered_question, record_user_information]
-  });
+    const session = new OpenAIConversationsSession({
+      conversationId
+    });
+    const agent = new Agent({
+      name: 'Me',
+      instructions: SYS_MSG,
+      tools: [record_unanswered_question, record_user_information]
+    });
 
-  const result = await run(agent, message,
-    {
-      stream: true,
-      session
-    },
-  );
+    const result = await run(agent, message,
+      {
+        stream: true,
+        session
+      },
+    );
 
-  const textIterable = result.toTextStream();
-  const stream = new ReadableStream({
-    async start(controller) {
-      const encoder = new TextEncoder();
-      for await (const chunk of textIterable) {
-        controller.enqueue(encoder.encode(chunk));
+    const textIterable = result.toTextStream();
+    const stream = new ReadableStream({
+      async start(controller) {
+        const encoder = new TextEncoder();
+        for await (const chunk of textIterable) {
+          controller.enqueue(encoder.encode(chunk));
+        }
+        controller.close();
       }
-      controller.close();
-    }
-  });
+    });
 
-  return new NextResponse(stream, {
-    headers: {
-      'Content-Type': 'text/event-stream',
-      'Cache-Control': 'no-cache, no-transform',
-      'Connection': 'keep-alive',
-    },
-  });
+    return new NextResponse(stream, {
+      headers: {
+        'Content-Type': 'text/event-stream',
+        'Cache-Control': 'no-cache, no-transform',
+        'Connection': 'keep-alive',
+      },
+    });
+  } catch (error) {
+    console.error('Outer error:', error);
+
+    return new NextResponse(
+      JSON.stringify({
+        error: error instanceof Error ? error.message : 'Unknown error',
+      }),
+      { status: 500 }
+    );
+
+  }
 }
