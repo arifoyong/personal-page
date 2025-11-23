@@ -1,8 +1,10 @@
 import Chat from '@/components/chat-component/chat'
 import { generateConvId } from '@/app/action/conv.action'
 import { Suspense } from "react";
+import { connection } from 'next/server'
 
 export default async function Home() {
+  await connection()
   const conv = await generateConvId()
 
   return (
