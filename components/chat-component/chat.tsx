@@ -106,7 +106,6 @@ export default function Chat({
       ) : (
         <AboutMe />
       )}
-
       <div className='relative'>
         <div className='absolute -top-4 left-0'>
           {loading && <LoadingDots />}
@@ -121,18 +120,6 @@ export default function Chat({
         </form>
         <Disclaimer />
       </div>
-      {/* <button onClick={async () => {
-        const res = await fetch('/api/push', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          }
-        })
-        const js = await res.json()
-        console.log(res)
-      }}>
-        test
-      </button> */}
     </div>
   );
 }
